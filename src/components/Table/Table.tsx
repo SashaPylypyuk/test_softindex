@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import './Table.css';
 
 interface Props {
-  users: Users[];
+  users: User[];
   sort(field: string): void;
   deleteElement(field: number): void;
 }
@@ -13,7 +13,7 @@ export const Table: FC<Props> = ({ users, sort, deleteElement }) => {
     <div>
       <table className="table">
         <thead className="table__thead">
-          <th className="table__cell table__th">
+          <th className=" table__th">
             <button className="table__button" type="button" onClick={() => sort('firstName')}>
               First Name
             </button>
@@ -39,30 +39,30 @@ export const Table: FC<Props> = ({ users, sort, deleteElement }) => {
             </button>
           </th>
         </thead>
-        {users.map((user, index) => (
-          <tr key={index} className="table__tr">
-            <td className="table__cell table__td">
-              {user.firstName}
-            </td>
-            <td className="table__cell table__td">
-              {user.lastName}
-            </td>
-            <td className="table__cell table__td">
-              {user.phone}
-            </td>
-            <td className="table__cell table__td">
-              {user.gender ? 'Male': 'Female'}
-            </td>
-            <td className="table__cell table__td">
-              {user.age}
-            </td>
-            <td>
-              <button className="table__button--delete" onClick={() => deleteElement(index)}>
-                Delete
-              </button>
-            </td>
-          </tr>
-        ))}
+          {users.map((user, index) => (
+            <tr key={index} className="table__tr">
+              <td className="table__cell table__td">
+                {user.firstName}
+              </td>
+              <td className="table__cell table__td">
+                {user.lastName}
+              </td>
+              <td className="table__cell table__td">
+                {user.phone}
+              </td>
+              <td className="table__cell table__td">
+                {user.gender ? 'Male': 'Female'}
+              </td>
+              <td className="table__cell table__td">
+                {user.age}
+              </td>
+              <td>
+                <button className="table__button--delete" onClick={() => deleteElement(index)}>
+                  Delete
+                </button>
+              </td>
+            </tr>
+          ))}
       </table>
     </div>
   );

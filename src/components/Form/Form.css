@@ -1,0 +1,38 @@
+.form {
+  width: 50%;
+  margin: 30px auto 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__text {
+  color: #1d3557;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.form__label {
+  margin: 5px 0 15px;
+}
+
+.form__input {
+  font-size: 20px;
+  color: #1d3557;
+  background-color: #f1faee;
+  margin-top: 2px;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  border: 2px #1d3557 solid;
+  padding: 15px;
+}
+
+.form__button {
+  color: #1d3557;
+  cursor: pointer;
+  background-color: #a8dadc;
+}
+
+.error {
+  border: 2px #e63946 solid;
+}

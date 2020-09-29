@@ -1,6 +1,6 @@
 /// <reference types="react-scripts" />
 
-interface Users {
+interface User {
   firstName: string;
   lastName: string;
   phone: string;
