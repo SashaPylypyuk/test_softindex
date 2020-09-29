@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  width: 50%;
+  margin: 30px auto 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__text {
+  color: #000;
+  font-size: 22px;
+}
+
+.form__label {
+  margin: 5px 0 15px;
+}
+
+.form__input {
+  font-size: 20px;
+  background-color: #fff;
+  margin-top: 2px;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  border: 1px #000 solid;
+  padding: 15px;
+}
+
+.form__button {
+  cursor: pointer;
+  background-color: #EFB27B;
+}
+
+.error {
+  border: 1px #ff0000 solid;
+}
